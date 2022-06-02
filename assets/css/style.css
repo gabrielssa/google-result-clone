@@ -8,7 +8,7 @@ body{
 }
 
 header{
-    margin-top: 30px;
+    margin-top: 1.87rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -22,15 +22,15 @@ header{
 }
 
 .google-logo{
-    margin-right: 40px;
-    margin-left: 20px;
+    margin-right: 2.5rem;
+    margin-left: 1.25rem;
     display:flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 .google-logo img{
-    width: 100px;
+    width: 6.25rem;
 }
 
 .search{
@@ -40,14 +40,14 @@ header{
 }
 
 .search-image{
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 .search-bar{
     display:flex;
     flex-direction: row;
     border: 1px solid #d1dae2;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     padding: 2px;
 }
 
@@ -61,16 +61,16 @@ header{
 
 .search-bar input[type=text]{
     width:  40vw;
-    height: 34px;
+    height: 2.12rem;
     outline: 0;
     border: none;
     transition: all 0s linear;
 }
 
 .search-icon svg{
-    width: 20px;
-    margin-right: 10px;
-    margin-left: 10px;
+    width: 1.25rem;
+    margin-right: 0.625rem;
+    margin-left: 0.625rem;
 }
 
 .filter-gray{
@@ -78,8 +78,8 @@ header{
 }
 
 .search-keyboard-icon img{
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 0.625rem;
+    margin-left: 0.625rem;
 }
 
 .control-btns{
@@ -94,7 +94,7 @@ header{
 }
 
 .container{
-    width: 950px;
+    width: 58.37rem;
 }
 
 nav{
@@ -102,8 +102,8 @@ nav{
     flex-direction: row;
     justify-content: center;
 
-    margin-top: 20px;
-    font-size: 14px;
+    margin-top: 1.25rem;
+    font-size: 0.87rem;
     border-bottom: 1px solid #ebebeb;
 }
 
@@ -117,8 +117,8 @@ nav ul{
 }
 
 nav ul li{
-    margin-right: 20px;
-    padding-bottom: 12px;
+    margin-right: 1.25rem;
+    padding-bottom: 0.75rem;
 }
 
 .selected{
@@ -126,13 +126,13 @@ nav ul li{
 }
 
 #search-results{
-    margin-top: 20px;
+    margin-top: 1.25rem;
     display:flex;
     justify-content: center;
 }
 
 .widget-result{
-    width: 580px;
+    width: 36.25rem;
     margin-bottom: 35px;
 }
 
@@ -152,7 +152,7 @@ nav ul li{
 
 footer{
     bottom: 0px;
-    width: 100%;
+    width: 100vw;
     margin-top: auto;
 }
 
@@ -160,12 +160,12 @@ footer{
 .footer-useful-links{
     color: #70757a;
     background-color: #F2F2F2;
-    padding: 15px;
+    padding: 0.93rem;
 }
 
 .footer-country{
-    font-size: 15px;
-    padding: 15px;
+    font-size: 0.93rem;
+    padding: 0.93rem;
     border-bottom: 1px solid #dadce0;
 }
 
@@ -187,7 +187,7 @@ footer{
 
 .footer-useful-links .block1 p,
 .footer-useful-links .block2 p{
-    margin: 0 20px 0 0;
+    margin: 0 1.25rem 0 0;
     display: inline-block;
 }
 
@@ -195,8 +195,15 @@ footer{
     white-space: nowrap;
 }
 
+@media (max-width: 950px){
+    .widget-result,
+    nav{
+        margin-left: 1.8rem;
+    }
+}
 
-@media (max-width: 700px){
+
+@media (max-width: 700px) {
 
     .search-bar input[type=text]{
         width: 20vw;
@@ -213,10 +220,37 @@ footer{
     }
 }
 
-@media (max-width: 450px){
-    .footer-country,
-    .footer-useful-links,
+@media (max-width: 600px){
+    .widget-result{
+        width: auto;
+    }
     header{
-        font-size: 2.5vw;
+        flex-direction: column;
+    }
+
+    .control-btns{
+        order:-1;
+        align-self: flex-end;
+        margin-bottom: 30px;
+    }
+
+    nav{
+        font-size: 0.5rem;
+    }
+
+    .block1{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 375px){
+    nav ul{
+        flex-wrap: wrap;
+    }
+    .widget-result{
+        width: 80vw;
     }
 }
