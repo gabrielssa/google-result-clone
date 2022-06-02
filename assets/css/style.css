@@ -87,7 +87,16 @@ header{
 .control-btn{
     margin-right: 20px;
 }
+
+.container{
+    width: 950px;
+}
+
 nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
     margin-top: 20px;
     font-size: 14px;
     border-bottom: 1px solid #ebebeb;
@@ -105,4 +114,8 @@ nav ul{
 nav ul li{
     margin-right: 20px;
     padding-bottom: 12px;
+}
+
+.selected{
+    border-bottom: 2px solid #1a73e8;
 }
