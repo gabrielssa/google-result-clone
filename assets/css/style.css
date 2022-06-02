@@ -1,13 +1,28 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 header{
     margin-top: 30px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+}
+
+.block1{
+    display: flex;
+    flex-direction: row;
+
 }
 
 .google-logo{
     margin-right: 40px;
+    margin-left: 20px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .google-logo img{
     width: 100px;
@@ -67,4 +82,27 @@ header{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.control-btn{
+    margin-right: 20px;
+}
+nav{
+    margin-top: 20px;
+    font-size: 14px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+nav ul{
+    color:#5f6368;
+    display:flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0px;
+    margin:0px;
+}
+
+nav ul li{
+    margin-right: 20px;
+    padding-bottom: 12px;
 }
