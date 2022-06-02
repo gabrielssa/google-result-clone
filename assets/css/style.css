@@ -1,5 +1,10 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    margin:0px;
+    padding: 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header{
@@ -55,11 +60,11 @@ header{
 }
 
 .search-bar input[type=text]{
-    width: 487px;
+    width:  40vw;
     height: 34px;
     outline: 0;
     border: none;
-    transition: all 500ms linear;
+    transition: all 0s linear;
 }
 
 .search-icon svg{
@@ -118,4 +123,100 @@ nav ul li{
 
 .selected{
     border-bottom: 2px solid #1a73e8;
+}
+
+#search-results{
+    margin-top: 20px;
+    display:flex;
+    justify-content: center;
+}
+
+.widget-result{
+    width: 580px;
+    margin-bottom: 35px;
+}
+
+.widget-result-site{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.widget-result-title{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.widget-result-description{
+    font-size: 14px;
+}
+
+footer{
+    bottom: 0px;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer-country,
+.footer-useful-links{
+    color: #70757a;
+    background-color: #F2F2F2;
+    padding: 15px;
+}
+
+.footer-country{
+    font-size: 15px;
+    padding: 15px;
+    border-bottom: 1px solid #dadce0;
+}
+
+.footer-useful-links{
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+}
+
+.footer-useful-links .block2{
+    float: right;
+}
+
+.footer-useful-links .block1,
+.footer-useful-links .block2{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-useful-links .block1 p,
+.footer-useful-links .block2 p{
+    margin: 0 20px 0 0;
+    display: inline-block;
+}
+
+.no-wrap{
+    white-space: nowrap;
+}
+
+
+@media (max-width: 700px){
+
+    .search-bar input[type=text]{
+        width: 20vw;
+    }
+
+    .footer-useful-links{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-useful-links .block2{
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 450px){
+    .footer-country,
+    .footer-useful-links,
+    header{
+        font-size: 2.5vw;
+    }
 }
